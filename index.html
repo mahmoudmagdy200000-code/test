@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Smith Clinic - Official Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+    </style>
+    <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => {}
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Dr. Smith Medical Center</h1>
+        <p>Providing the best care in town.</p>
+    </header>
+
+    <div class="content">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of medical services. Check our live status below before you visit!</p>
+
+        <!-- ========================================== -->
+        <!-- TONVUX WIDGET EMBED CODE -->
+        <!-- ========================================== -->
+        <link rel="stylesheet" href="https://tonvux.vercel.app/style.css">
+        <div id="tonvux-widget" 
+             data-tenant-id="5b08283f-94af-4b9f-801f-cad13bc3b411" 
+             data-shape="compact_card" 
+             data-theme-color="#f73b57">
+        </div>
+        <script src="https://tonvux.vercel.app/widget.js" async></script>
+        <!-- ========================================== -->
+
+    </div>
+
+</body>
+
+</html>
