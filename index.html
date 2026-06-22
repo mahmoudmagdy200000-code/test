@@ -1,411 +1,380 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Northbridge Family Clinic | Compassionate Family Care</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-background": "#191c1d",
-                        "on-tertiary-fixed": "#001a41",
-                        "inverse-on-surface": "#f0f1f2",
-                        "on-secondary-fixed-variant": "#3b4951",
-                        "surface-tint": "#3e5e95",
-                        "primary-fixed-dim": "#abc7ff",
-                        "error": "#ba1a1a",
-                        "tertiary-container": "#002c64",
-                        "error-container": "#ffdad6",
-                        "outline-variant": "#c4c6d1",
-                        "on-secondary-fixed": "#0f1d25",
-                        "tertiary-fixed-dim": "#adc7ff",
-                        "inverse-surface": "#2e3132",
-                        "on-primary-container": "#7796d1",
-                        "surface-bright": "#f8f9fa",
-                        "surface-container-low": "#f3f4f5",
-                        "on-secondary-container": "#56656e",
-                        "on-surface-variant": "#43474f",
-                        "surface-container-high": "#e7e8e9",
-                        "surface-container-highest": "#e1e3e4",
-                        "background": "#f8f9fa",
-                        "secondary-fixed-dim": "#bac9d3",
-                        "on-tertiary-container": "#5594ff",
-                        "on-primary-fixed": "#001b3f",
-                        "primary": "#00193c",
-                        "outline": "#747781",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "on-surface": "#191c1d",
-                        "surface": "#f8f9fa",
-                        "secondary": "#526069",
-                        "on-tertiary-fixed-variant": "#004493",
-                        "tertiary-fixed": "#d8e2ff",
-                        "secondary-container": "#d3e2ed",
-                        "on-secondary": "#ffffff",
-                        "on-primary-fixed-variant": "#24467c",
-                        "surface-variant": "#e1e3e4",
-                        "on-error": "#ffffff",
-                        "primary-container": "#002d62",
-                        "surface-dim": "#d9dadb",
-                        "primary-fixed": "#d7e2ff",
-                        "inverse-primary": "#abc7ff",
-                        "tertiary": "#00183c",
-                        "on-primary": "#ffffff",
-                        "surface-container": "#edeeef",
-                        "secondary-fixed": "#d6e5ef"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "16px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "xs": "4px",
-                        "md": "24px",
-                        "xl": "80px",
-                        "base": "8px",
-                        "lg": "48px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "margin-mobile": "16px",
-                        "sm": "12px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Public Sans"],
-                        "headline-md": ["Public Sans"],
-                        "headline-xl": ["Public Sans"],
-                        "body-md": ["Public Sans"],
-                        "headline-lg": ["Public Sans"],
-                        "headline-lg-mobile": ["Public Sans"],
-                        "body-lg": ["Public Sans"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
-                    }
-                }
-            }
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Northbridge Family Clinic | Compassionate Family Care</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- TONVUX widget styles must live in the document head, not inside the header/nav -->
+  <link rel="stylesheet" href="https://tonvux.vercel.app/tonvux.css">
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#191c1d",
+            "background": "#f8f9fa",
+            "surface": "#f8f9fa",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f4f5",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "outline-variant": "#c4c6d1",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#43474f",
+            "primary": "#00193c",
+            "primary-container": "#002d62",
+            "on-primary": "#ffffff",
+            "secondary": "#526069",
+            "secondary-container": "#d3e2ed"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "16px",
+            full: "9999px"
+          },
+          spacing: {
+            xs: "4px",
+            base: "8px",
+            sm: "12px",
+            md: "24px",
+            gutter: "24px",
+            lg: "48px",
+            xl: "80px",
+            "margin-desktop": "64px",
+            "margin-mobile": "16px"
+          },
+          fontFamily: {
+            "body": ["Public Sans", "sans-serif"],
+            "label-md": ["Public Sans", "sans-serif"],
+            "headline-md": ["Public Sans", "sans-serif"],
+            "headline-lg": ["Public Sans", "sans-serif"],
+            "headline-xl": ["Public Sans", "sans-serif"]
+          },
+          fontSize: {
+            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+          }
         }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .clinic-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .clinic-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px -10px rgba(0, 25, 60, 0.08);
-        }
-    </style>
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: "Public Sans", sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .clinic-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .clinic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px -10px rgba(0, 25, 60, 0.08);
+    }
+  </style>
 </head>
-        
-<body class="bg-background text-on-background font-body-md">
-<!-- Header / TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
-<div class="font-headline-md text-headline-md font-bold text-primary">
-                Northbridge Family Clinic
+
+<body class="bg-background text-on-background font-body">
+  <!-- Header / TopAppBar -->
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+      <a href="#home" class="font-headline-md text-headline-md font-bold text-primary">
+        Northbridge Family Clinic
+      </a>
+
+      <nav class="hidden md:flex gap-gutter items-center">
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#home">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#services">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#physicians">Physicians</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#hours">Hours</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="bg-primary text-on-primary px-5 md:px-6 py-2 rounded-lg font-label-md text-label-md font-bold hover:bg-primary-container transition-all">
+        Book Appointment
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-xl md:py-24" id="home">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid gap-lg items-center">
+        <div class="space-y-md text-center mx-auto max-w-3xl">
+          <h1 class="font-headline-xl text-[38px] md:text-headline-xl text-primary leading-tight">
+            Compassionate Family Care, Close to Home
+          </h1>
+          <p class="font-body text-body-lg text-on-surface-variant max-w-xl mx-auto">
+            Walk-in support, family medicine, preventive care, and same-day updates for patients in the heart of Toronto.
+          </p>
+          <div class="flex flex-wrap gap-md pt-base justify-center">
+            <a href="#contact" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold hover:shadow-lg transition-all">
+              Book Appointment
+            </a>
+            <a href="#hours" class="bg-secondary-container text-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold border border-outline-variant hover:bg-surface-container-high transition-all">
+              View Clinic Hours
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TONVUX Live Status Widget - correct inline placement -->
+    <section class="py-lg bg-surface-container-low" id="live-status">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="rounded-2xl border border-outline-variant/70 bg-surface-container-lowest shadow-sm p-md md:p-lg grid md:grid-cols-[1fr_430px] gap-md md:gap-lg items-center">
+          <div class="text-center md:text-left">
+            <p class="font-label-md text-label-md uppercase tracking-wide text-primary mb-xs">Live clinic update</p>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Check before you visit</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto md:mx-0">
+              See current clinic availability, walk-in status, wait time, and patient-facing updates in real time.
+            </p>
+          </div>
+
+          <div class="w-full max-w-md mx-auto md:mx-0 md:justify-self-end">
+            <div id="tonvux-widget"
+                 data-tenant-id="5b08283f-94af-4b9f-801f-cad13bc3b411"
+                 data-shape="compact_card"
+                 data-theme-color="#091115"
+                 data-api-url="https://tonvux-backend.onrender.com">
             </div>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#home">Home</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#services">Services</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#physicians">Physicians</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#hours">Hours</a>
-<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-md text-label-md" href="#contact">Contact</a>
-</nav>   <link rel="stylesheet" href="https://tonvux.vercel.app/tonvux.css">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div id="tonvux-widget"
-     data-tenant-id="5b08283f-94af-4b9f-801f-cad13bc3b411"
-     data-shape="compact_card"
-     data-theme-color="#091115"
-     data-api-url="https://tonvux-backend.onrender.com">
-</div>
+    <!-- Services Section -->
+    <section class="py-xl bg-surface-container-lowest" id="services">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center max-w-2xl mx-auto mb-lg">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Our Clinical Services</h2>
+          <p class="text-on-surface-variant">Comprehensive medical care tailored for every stage of your life, provided by dedicated healthcare professionals.</p>
+        </div>
 
-<script src="https://tonvux.vercel.app/widget.js" async></script>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md font-bold hover:bg-primary-container transition-all">
-                Book Appointment
-            </button>
-</div>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative overflow-hidden py-xl md:py-24" id="home">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid gap-lg items-center">
-<div class="space-y-md text-center mx-auto">
-<h1 class="font-headline-xl text-headline-xl text-primary leading-tight">
-                        Compassionate Family Care, Close to Home
-                    </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                        Walk-in support, family medicine, preventive care, and same-day updates for patients in the heart of Toronto.
-                    </p>
-<div class="flex flex-wrap gap-md pt-base justify-center">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold hover:shadow-lg transition-all">
-                            Book Appointment
-                        </button>
-<button class="bg-secondary-container text-primary px-8 py-4 rounded-xl font-label-md text-label-md font-bold border border-outline-variant hover:bg-surface-container-high transition-all">
-                            View Clinic Hours
-                        </button>
-</div>
-</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">family_restroom</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Family Medicine</h3>
+            <p class="text-on-surface-variant flex-grow">Primary care for all family members, from infants to seniors, focusing on long-term wellness.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
 
-</div>
-</section>
-<!-- Widget Test Area -->
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">medical_information</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Walk-in Visits</h3>
+            <p class="text-on-surface-variant flex-grow">Urgent care for minor illnesses and injuries when you cannot wait for a scheduled appointment.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
 
-<!-- Services Section -->
-<section class="py-xl bg-surface-container-lowest" id="services">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="text-center max-w-2xl mx-auto mb-lg">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-base">Our Clinical Services</h2>
-<p class="text-on-surface-variant">Comprehensive medical care tailored for every stage of your life, provided by dedicated healthcare professionals.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Service Card 1 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">family_restroom</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Family Medicine</h3>
-<p class="text-on-surface-variant flex-grow">Primary care for all family members, from infants to seniors, focusing on long-term wellness.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<!-- Service Card 2 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">medical_information</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Walk-in Visits</h3>
-<p class="text-on-surface-variant flex-grow">Urgent care for minor illnesses and injuries when you can't wait for a scheduled appointment.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<!-- Service Card 3 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">child_care</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Pediatric Care</h3>
-<p class="text-on-surface-variant flex-grow">Specialized health services for children, including immunizations and developmental screenings.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<!-- Service Card 4 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Preventive Screening</h3>
-<p class="text-on-surface-variant flex-grow">Proactive check-ups and diagnostic tests to detect health issues before they become serious.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<!-- Service Card 5 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Chronic Care Management</h3>
-<p class="text-on-surface-variant flex-grow">Supporting patients with ongoing health conditions like diabetes or heart disease.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<!-- Service Card 6 -->
-<div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-3xl">videocam</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">Virtual Follow-ups</h3>
-<p class="text-on-surface-variant flex-grow">Convenient telehealth appointments for medication reviews and non-emergency consultations.</p>
-<button class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-</div>
-</div>
-</section>
-<!-- Physicians Section -->
-<section class="py-xl bg-surface" id="physicians">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-end gap-md mb-lg">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-base">Meet Our Team</h2>
-<p class="text-on-surface-variant">Our physicians are dedicated to providing evidence-based, patient-centered care for your entire family.</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Dr. Amelia Grant -->
-<div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-24 h-24 bg-primary text-on-primary rounded-full mx-auto flex items-center justify-center text-headline-lg">
-                            AG
-                        </div>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary">Dr. Amelia Grant</h4>
-<p class="text-on-surface-variant font-label-md">Family Physician</p>
-</div>
-<p class="text-on-surface-variant text-sm">Specializing in preventative medicine and adolescent health with over 15 years of clinical experience.</p>
-</div>
-<!-- Dr. Marcus Lee -->
-<div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-24 h-24 bg-secondary text-on-secondary rounded-full mx-auto flex items-center justify-center text-headline-lg">
-                            ML
-                        </div>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary">Dr. Marcus Lee</h4>
-<p class="text-on-surface-variant font-label-md">Internal Medicine</p>
-</div>
-<p class="text-on-surface-variant text-sm">Expert in managing complex chronic conditions and geriatric care with a focus on holistic treatment plans.</p>
-</div>
-<!-- Dr. Priya Shah -->
-<div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card transition-all duration-700 opacity-100 translate-y-0">
-<div class="w-24 h-24 bg-primary-container text-on-primary-container rounded-full mx-auto flex items-center justify-center text-headline-lg">
-                            PS
-                        </div>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary">Dr. Priya Shah</h4>
-<p class="text-on-surface-variant font-label-md">Family Physician</p>
-</div>
-<p class="text-on-surface-variant text-sm">Passionate about women's health and pediatric wellness, providing thorough care for all ages.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Hours & Contact Section -->
-<section class="py-xl" id="hours">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-lg">
-<!-- Hours Card -->
-<div class="bg-primary text-on-primary p-lg rounded-xl shadow-lg relative overflow-hidden">
-<div class="relative z-10">
-<div class="flex items-center gap-md mb-lg">
-<span class="material-symbols-outlined text-4xl text-on-primary-container">watch_later</span>
-<h2 class="font-headline-lg text-headline-lg">Clinic Hours</h2>
-</div>
-<div class="space-y-base mb-lg">
-<div class="flex justify-between border-b border-on-primary-container/30 pb-base">
-<span class="font-label-md">Monday – Friday</span>
-<span class="">8:00 AM – 6:00 PM</span>
-</div>
-<div class="flex justify-between border-b border-on-primary-container/30 pb-base">
-<span class="font-label-md">Saturday</span>
-<span class="">9:00 AM – 2:00 PM</span>
-</div>
-<div class="flex justify-between text-on-primary-container">
-<span class="font-label-md">Sunday</span>
-<span class="">Closed</span>
-</div>
-</div>
-<div class="bg-on-primary-container/10 p-md rounded-lg border border-on-primary-container/20">
-<p class="text-sm italic opacity-90">Note: Hours may change during holidays. Please check live updates before visiting.</p>
-</div>
-</div>
-<!-- Abstract Background Shape -->
-<div class="absolute top-0 right-0 w-64 h-64 bg-on-primary-container rounded-full blur-[100px] opacity-10"></div>
-</div>
-<!-- Contact & Map Area -->
-<div class="flex flex-col gap-gutter" id="contact">
-<div class="grid md:grid-cols-2 gap-md">
-<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
-<span class="material-symbols-outlined text-primary mb-base">location_on</span>
-<h4 class="font-bold text-primary mb-xs">Location</h4>
-<p class="text-on-surface-variant text-sm">125 King Street West<br>Toronto, ON M5H 4A1</p>
-</div>
-<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
-<span class="material-symbols-outlined text-primary mb-base">call</span>
-<h4 class="font-bold text-primary mb-xs">Phone</h4>
-<p class="text-on-surface-variant text-sm">(416) 555-0184</p>
-<p class="text-xs text-secondary mt-xs">Mon-Fri Response</p>
-</div>
-<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
-<span class="material-symbols-outlined text-primary mb-base">mail</span>
-<h4 class="font-bold text-primary mb-xs">Email</h4>
-<p class="text-on-surface-variant text-sm">hello@northbridgeclinic.ca</p>
-</div>
-<div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
-<span class="material-symbols-outlined text-primary mb-base">emergency</span>
-<h4 class="font-bold text-primary mb-xs">Emergencies</h4>
-<p class="text-on-surface-variant text-sm">Call 911 immediately or visit nearest ER</p>
-</div>
-</div>
-<!-- Map Placeholder -->
-<div class="flex-grow min-h-[250px] rounded-xl overflow-hidden border border-outline-variant relative group">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-location="Toronto, Canada" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCli3WzYWlLpEHAeBAb9KKV06rsqOkQVOR4fG2B4GmgGhXAlR9R-Ho8PBwZcXrH4sjEDWKDbY1_t3SDWDdhToLh36xmb-N5iBbe2mk1fUGMdooaCIt_NRkNga8Bpb7dILwFqwqN3q4lqTF8-QlVFyv77lVStVK0hyvFRdCpHnbKstStBkZ7hpEV9Sn8NsKDWP7SVKV2ulXGaF8HgoBDC2WoWJL8ZiUix5X_K64C6-lmygDtlxDA7pmckknVYRUN9KZQhSH3GymPQiTU')"></div>
-<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
-<div class="absolute bottom-md left-md bg-surface-container-lowest p-md rounded-lg shadow-md border border-outline-variant/30 flex items-center gap-base">
-<span class="material-symbols-outlined text-primary">navigation</span>
-<span class="font-label-md text-on-surface">Open in Maps</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-lg mt-xl">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-md mb-lg">
-<div class="font-headline-md text-headline-md font-bold text-primary">
-                    Northbridge Family Clinic
-                </div>
-<div class="flex flex-wrap gap-md">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Terms of Service</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Accessibility</a>
-</div>
-</div>
-<div class="border-t border-outline-variant/30 pt-md flex flex-col md:flex-row justify-between items-center gap-base">
-<p class="text-on-surface-variant text-sm font-body-md opacity-90">
-                    © 2024 Northbridge Family Clinic. All rights reserved.
-                </p>
-<div class="flex gap-md">
-<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-secondary-container transition-all">
-<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
-</button>
-<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-secondary-container transition-all">
-<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-</button>
-</div>
-</div>
-</div>
-</footer>
-<script>
-        // Smooth reveal for clinic cards
-        const observerOptions = {
-            threshold: 0.1
-        };
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">child_care</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Pediatric Care</h3>
+            <p class="text-on-surface-variant flex-grow">Specialized health services for children, including immunizations and developmental screenings.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                }
-            });
-        }, observerOptions);
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Preventive Screening</h3>
+            <p class="text-on-surface-variant flex-grow">Proactive check-ups and diagnostic tests to detect health issues before they become serious.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
 
-        document.querySelectorAll('.clinic-card').forEach(card => {
-            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
-            observer.observe(card);
-        });
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Chronic Care Management</h3>
+            <p class="text-on-surface-variant flex-grow">Supporting patients with ongoing health conditions like diabetes or heart disease.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
 
-        // Sticky Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 20) {
-                header.classList.add('h-16', 'shadow-md');
-                header.classList.remove('h-20', 'shadow-sm');
-            } else {
-                header.classList.add('h-20', 'shadow-sm');
-                header.classList.remove('h-16', 'shadow-md');
-            }
-        });
-    </script>
+          <div class="clinic-card p-md border border-outline-variant rounded-xl flex flex-col items-start gap-md bg-surface-container-lowest">
+            <div class="w-14 h-14 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl">videocam</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">Virtual Follow-ups</h3>
+            <p class="text-on-surface-variant flex-grow">Convenient telehealth appointments for medication reviews and non-emergency consultations.</p>
+            <a href="#contact" class="text-primary font-bold hover:underline inline-flex items-center gap-base">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Physicians Section -->
+    <section class="py-xl bg-surface" id="physicians">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-xl mb-lg">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Meet Our Team</h2>
+          <p class="text-on-surface-variant">Our physicians are dedicated to providing evidence-based, patient-centered care for your entire family.</p>
+        </div>
 
-</body></html>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card">
+            <div class="w-24 h-24 bg-primary text-on-primary rounded-full mx-auto flex items-center justify-center text-headline-lg">AG</div>
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">Dr. Amelia Grant</h4>
+              <p class="text-on-surface-variant font-label-md">Family Physician</p>
+            </div>
+            <p class="text-on-surface-variant text-sm">Specializing in preventative medicine and adolescent health with over 15 years of clinical experience.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card">
+            <div class="w-24 h-24 bg-secondary text-on-primary rounded-full mx-auto flex items-center justify-center text-headline-lg">ML</div>
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">Dr. Marcus Lee</h4>
+              <p class="text-on-surface-variant font-label-md">Internal Medicine</p>
+            </div>
+            <p class="text-on-surface-variant text-sm">Expert in managing complex chronic conditions and geriatric care with a focus on holistic treatment plans.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-lg border border-outline-variant rounded-xl text-center space-y-md clinic-card">
+            <div class="w-24 h-24 bg-primary-container text-on-primary rounded-full mx-auto flex items-center justify-center text-headline-lg">PS</div>
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">Dr. Priya Shah</h4>
+              <p class="text-on-surface-variant font-label-md">Family Physician</p>
+            </div>
+            <p class="text-on-surface-variant text-sm">Passionate about women's health and pediatric wellness, providing thorough care for all ages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours & Contact Section -->
+    <section class="py-xl" id="hours">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-lg">
+        <div class="bg-primary text-on-primary p-lg rounded-xl shadow-lg relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-center gap-md mb-lg">
+              <span class="material-symbols-outlined text-4xl">watch_later</span>
+              <h2 class="font-headline-lg text-headline-lg">Clinic Hours</h2>
+            </div>
+
+            <div class="space-y-base mb-lg">
+              <div class="flex justify-between border-b border-white/25 pb-base">
+                <span class="font-label-md">Monday – Friday</span>
+                <span>8:00 AM – 6:00 PM</span>
+              </div>
+              <div class="flex justify-between border-b border-white/25 pb-base">
+                <span class="font-label-md">Saturday</span>
+                <span>9:00 AM – 2:00 PM</span>
+              </div>
+              <div class="flex justify-between text-white/75">
+                <span class="font-label-md">Sunday</span>
+                <span>Closed</span>
+              </div>
+            </div>
+
+            <div class="bg-white/10 p-md rounded-lg border border-white/20">
+              <p class="text-sm italic opacity-90">Note: Hours may change during holidays. Please check live updates before visiting.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-gutter" id="contact">
+          <div class="grid md:grid-cols-2 gap-md">
+            <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
+              <span class="material-symbols-outlined text-primary mb-base">location_on</span>
+              <h4 class="font-bold text-primary mb-xs">Location</h4>
+              <p class="text-on-surface-variant text-sm">125 King Street West<br>Toronto, ON M5H 4A1</p>
+            </div>
+
+            <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
+              <span class="material-symbols-outlined text-primary mb-base">call</span>
+              <h4 class="font-bold text-primary mb-xs">Phone</h4>
+              <p class="text-on-surface-variant text-sm">(416) 555-0184</p>
+              <p class="text-xs text-secondary mt-xs">Mon-Fri Response</p>
+            </div>
+
+            <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
+              <span class="material-symbols-outlined text-primary mb-base">mail</span>
+              <h4 class="font-bold text-primary mb-xs">Email</h4>
+              <p class="text-on-surface-variant text-sm">hello@northbridgeclinic.ca</p>
+            </div>
+
+            <div class="bg-surface-container-low p-md rounded-xl border border-outline-variant">
+              <span class="material-symbols-outlined text-primary mb-base">emergency</span>
+              <h4 class="font-bold text-primary mb-xs">Emergencies</h4>
+              <p class="text-on-surface-variant text-sm">Call 911 immediately or visit nearest ER</p>
+            </div>
+          </div>
+
+          <div class="min-h-[250px] rounded-xl overflow-hidden border border-outline-variant relative group bg-surface-container-low flex items-center justify-center">
+            <div class="text-center p-md">
+              <span class="material-symbols-outlined text-primary text-5xl mb-base">map</span>
+              <h4 class="font-bold text-primary">Toronto Clinic Location</h4>
+              <p class="text-on-surface-variant text-sm">Map placeholder for demo layout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-lg mt-xl">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-md mb-lg">
+        <div class="font-headline-md text-headline-md font-bold text-primary">
+          Northbridge Family Clinic
+        </div>
+        <div class="flex flex-wrap gap-md">
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Privacy Policy</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Terms of Service</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Accessibility</a>
+        </div>
+      </div>
+
+      <div class="border-t border-outline-variant/30 pt-md flex flex-col md:flex-row justify-between items-center gap-base">
+        <p class="text-on-surface-variant text-sm font-body opacity-90">
+          © 2026 Northbridge Family Clinic. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-8');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.clinic-card').forEach(card => {
+      card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+      observer.observe(card);
+    });
+  </script>
+
+  <!-- TONVUX widget script loads after the mount div exists -->
+  <script src="https://tonvux.vercel.app/widget.js" async></script>
+</body>
+</html>
